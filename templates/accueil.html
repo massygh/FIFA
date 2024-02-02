@@ -6,12 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <!-- Inclure le lien vers votre fichier CSS si vous en avez un -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>FIFA Ultimate Team</title>
 </head>
 <body>
-    <h1>Accueil</h1>
+    <h1>FIFA Ultimate Team</h1>
     <h2>Joueurs</h2>
     <ul>
         {% for joueur in joueurs %}
@@ -24,13 +22,5 @@
             <li>{{ equipe.nom }}</li>
         {% endfor %}
     </ul>
-
-    <!-- Exemple de formulaire avec CSRF -->
-    <form method="post" action="/quelque-chose">
-        {% csrf_token() %}
-        <!-- autres champs de formulaire -->
-        <input type="submit" value="Envoyer">
-    </form>
-
 </body>
 </html>

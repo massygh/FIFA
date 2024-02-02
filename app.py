@@ -21,3 +21,12 @@ equipes = [
 @app.route('/')
 def accueil():
     return render_template('accueil.html', joueurs=joueurs, equipes=equipes)
+
+@app.route('/page-inaccessible')
+def page_inaccessible():
+    message = "Cette page est inaccessible pour le moment."
+    return render_template('page_inaccessible.html', message=message)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
