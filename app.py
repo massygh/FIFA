@@ -28,4 +28,4 @@ def page_inaccessible():
     return render_template('page_inaccessible.html', message=message)
 
 if __name__ == '__main__':
-    app.run(app.run(debug=True), port=3016)
+    app.run(debug=True, port=3000)
