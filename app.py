@@ -1,5 +1,5 @@
 # app.py
-
+import random
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -8,6 +8,7 @@ app = Flask(__name__)
 joueurs = [
     {"id": 1, "nom": "Messi", "equipe": "Barcelone"},
     {"id": 2, "nom": "Ronaldo", "equipe": "Juventus"},
+    {"id": 3, "nom": "Wail", "equipe": "Paris Saint-Germin"},
     # Ajoutez d'autres joueurs
 ]
 
@@ -15,6 +16,7 @@ joueurs = [
 equipes = [
     {"id": 1, "nom": "Barcelone"},
     {"id": 2, "nom": "Juventus"},
+    {"id": 3, "nom": "Paris Saint-Germin"},
     # Ajoutez d'autres équipes
 ]
 
@@ -28,4 +30,5 @@ def page_inaccessible():
     return render_template('page_inaccessible.html', message=message)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3010)
+    random_port = random.randint(5000, 9999)
+    app.run(debug=True, port=random_port)
