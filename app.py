@@ -17,5 +17,4 @@ def accueil():
     return render_template('accueil.html', joueurs=joueurs)
 
 if __name__ == '__main__':
-    random_port = random.randint(5000, 9999)
-    app.run(debug=True, port=random_port)
+    app.run(debug=True)
