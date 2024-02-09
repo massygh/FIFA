@@ -6,17 +6,17 @@ app = Flask(__name__)
 
 # Exemple de structure de données pour les joueurs
 joueurs = [
-    {"id": 1, "nom": "Messi", "equipe": "Barcelone"},
-    {"id": 2, "nom": "Ronaldo", "equipe": "Juventus"},
-    {"id": 3, "nom": "Wail", "equipe": "Paris Saint-Germin"},
+    {"id": 1, "nom": "Messi", "equipe": "Miami FC"},
+    {"id": 2, "nom": "Ronaldo", "equipe": "Al Nassr"},
+    {"id": 3, "nom": "Wail", "equipe": "Paris Saint-Germain"},
     # Ajoutez d'autres joueurs
 ]
 
 # Exemple de structure de données pour les équipes
 equipes = [
-    {"id": 1, "nom": "Barcelone"},
-    {"id": 2, "nom": "Juventus"},
-    {"id": 3, "nom": "Paris Saint-Germin"},
+    {"id": 1, "nom": "Miami FC"},
+    {"id": 2, "nom": "Al Nassr"},
+    {"id": 3, "nom": "Paris Saint-Germain"},
     # Ajoutez d'autres équipes
 ]
 
