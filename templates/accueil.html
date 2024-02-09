@@ -7,20 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA Ultimate Team</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>FIFA Ultimate Team</h1>
-    <h2>Joueurs</h2>
-    <ul>
+    <div class="cartes-joueurs">
         {% for joueur in joueurs %}
-            <li><a href="/joueur/{{ joueur.id }}">{{ joueur.nom }} - {{ joueur.equipe }}</a></li>
+            {% include 'carte_joueur.html' %}
         {% endfor %}
-    </ul>
-    <h2>Équipes</h2>
-    <ul>
-        {% for equipe in equipes %}
-            <li>{{ equipe.nom }}</li>
-        {% endfor %}
-    </ul>
+    </div>
 </body>
 </html>

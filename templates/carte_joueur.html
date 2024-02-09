@@ -1,0 +1,13 @@
+<!-- templates/carte_joueur.html -->
+
+<div class="carte-joueur">
+    <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="Avatar du joueur">
+    <h2>{{ joueur.nom }}</h2>
+    <p>Équipe: {{ joueur.equipe }}</p>
+    <div class="stats">
+        <p>Attaque: {{ joueur.stats.attaque }}</p>
+        <p>Défense: {{ joueur.stats.defense }}</p>
+        <p>Physique: {{ joueur.stats.physique }}</p>
+        <!-- Ajoutez d'autres statistiques selon vos besoins -->
+    </div>
+</div>
