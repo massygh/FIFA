@@ -13,6 +13,6 @@
     position: absolute;
     bottom: 150px; /* Ajustez cette valeur selon vos préférences (haut)*/
     right: -40px; /* Ajustez cette valeur selon vos préférences */
-    width: 159px; /* Ajustez la taille de l'avatar selon vos préférences */
+    width: 200px; /* Ajustez la taille de l'avatar selon vos préférences */
     height: auto; /* Ajustez la hauteur de l'avatar en conséquence */
 }
