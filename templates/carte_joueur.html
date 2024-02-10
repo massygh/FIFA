@@ -1,13 +1,34 @@
 <!-- templates/carte_joueur.html -->
 
-<div class="carte-joueur">
-    <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="Avatar du joueur">
-    <h2>{{ joueur.nom }}</h2>
-    <p>Équipe: {{ joueur.equipe }}</p>
-    <div class="stats">
-        <p>Attaque: {{ joueur.stats.attaque }}</p>
-        <p>Défense: {{ joueur.stats.defense }}</p>
-        <p>Physique: {{ joueur.stats.physique }}</p>
-        <!-- Ajoutez d'autres statistiques selon vos besoins -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte joueur</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    {% for joueur in joueurs %}
+    <div class="carte-joueur">
+        <!-- Design de la carte -->
+        <img class="carte-design" src="{{ url_for('static', filename='images/TOTS_grande.png') }}" alt="Design de la carte">
+        
+        <!-- Avatar du joueur -->
+        <img class="avatar" src="{{ url_for('static', filename='images/' + joueur['avatar']) }}" alt="Avatar du joueur">
+        
+        <!-- Informations du joueur -->
+        <h2>{{ joueur['nom'] }}</h2>
+        <p>Équipe: {{ joueur['equipe'] }}</p>
+        
+        <!-- Statistiques du joueur -->
+        <div class="stats">
+            <p>Attaque: {{ joueur['stats']['attaque'] }}</p>
+            <p>Défense: {{ joueur['stats']['defense'] }}</p>
+            <p>Physique: {{ joueur['stats']['physique'] }}</p>
+        </div>
     </div>
-</div>
+    {% endfor %}
+</body>
+</html>
