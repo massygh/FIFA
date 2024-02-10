@@ -10,12 +10,12 @@
 }
 
 .avatar {
-    font-size: 46%;
+    font-size: 40%;
     left: 32%; /* droite */
     line-height: 10%;
     position: absolute;
     text-align: center;
     width: 60%;
     bottom: 41%;
-    opacity: 0.8; /* Ajout de l'opacité */
+    opacity: 0.2; /* Ajout de l'opacité */
 }
