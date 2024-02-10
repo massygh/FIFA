@@ -18,3 +18,25 @@
     bottom: 41%; /* bas - haut */
     opacity: 0.93; /* Ajout de l'opacité */
 }
+
+.stat-attaque, .stat-defense, .stat-physique {
+    position: absolute;
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Style de police */
+    font-size: 12px; /* Taille de la police */
+}
+
+.stat-attaque {
+    top: 20px; /* Position verticale */
+    left: 30px; /* Position horizontale */
+}
+
+.stat-defense {
+    top: 40px; /* Position verticale */
+    left: 30px; /* Position horizontale */
+}
+
+.stat-physique {
+    top: 60px; /* Position verticale */
+    left: 30px; /* Position horizontale */
+}
