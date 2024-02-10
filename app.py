@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 # Exemple de structure de données pour les joueurs
 joueurs = [
-    {"id": 1, "nom": "Messi", "equipe": "Miami FC", "avatar": "TOTS_grande.png", "stats": {"attaque": 95, "defense": 70, "physique": 80}},
+    {"id": 1, "nom": "Messi", "equipe": "Miami FC", "avatar": "messi.png", "stats": {"attaque": 95, "defense": 70, "physique": 80}},
     {"id": 2, "nom": "Ronaldo", "equipe": "Al Nassr", "avatar": "avatar_ronaldo.png", "stats": {"attaque": 90, "defense": 75, "physique": 85}},
-    {"id": 3, "nom": "Wail", "equipe": "Paris Saint-Germain", "avatar": "TOTS_grande.png", "stats": {"attaque": 85, "defense": 80, "physique": 75}},
+    {"id": 3, "nom": "Neymar", "equipe": "Paris Saint-Germain", "avatar": "neymar.png", "stats": {"attaque": 85, "defense": 80, "physique": 75}},
     # Ajoutez d'autres joueurs avec le nom de l'image correspondante
 ]
 
@@ -23,11 +23,6 @@ equipes = [
 @app.route('/')
 def accueil():
     return render_template('accueil.html', joueurs=joueurs, equipes=equipes)
-
-@app.route('/page-inaccessible')
-def page_inaccessible():
-    message = "Cette page est inaccessible pour le moment."
-    return render_template('page_inaccessible.html', message=message)
 
 if __name__ == '__main__':
     random_port = random.randint(5000, 9999)
