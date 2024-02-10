@@ -11,10 +11,10 @@
 
 .avatar {
     font-size: 50%;
-    left: 30%; /* droite */
+    left: 32%; /* droite */
     line-height: 10%;
     position: absolute;
     text-align: center;
     width: 60%;
-    bottom: 42%;
+    bottom: 41%;
 }
