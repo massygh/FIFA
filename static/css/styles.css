@@ -21,22 +21,22 @@
 
 .stat-attaque, .stat-defense, .stat-physique {
     position: absolute;
-    color: white; /* Couleur du texte */
-    font-weight: bold; /* Style de police */
-    font-size: 12px; /* Taille de la police */
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .stat-attaque {
-    top: 20px; /* Position verticale */
-    left: 10px; /* Position horizontale */
+    top: 20px;
+    left: 10px;
 }
 
 .stat-defense {
-    top: 40px; /* Position verticale */
-    left: 10px; /* Position horizontale */
+    top: 40px;
+    left: 10px;
 }
 
 .stat-physique {
-    top: 60px; /* Position verticale */
-    left: 10px; /* Position horizontale */
+    top: 60px;
+    left: 10px;
 }
