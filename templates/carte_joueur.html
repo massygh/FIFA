@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte joueur</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        .carte-design {
+            position: relative;
+        }
+        .avatar-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     {% for joueur in joueurs %}
@@ -16,11 +29,12 @@
         <div class="carte-design">
             <img class="carte" src="{{ url_for('static', filename='images/TOTS_grande.png') }}" alt="Design de la carte">
             <img class="avatar" src="{{ url_for('static', filename='images/avatar_ronaldo.png') }}" alt="Avatar du joueur">
+            <!-- Nom du joueur -->
+            <div class="avatar-name">{{ joueur['nom'] }}</div>
             <!-- Statistiques du joueur -->
             <div class="stat-attaque">{{ joueur['stats']['attaque'] }}</div>
             <div class="stat-defense">{{ joueur['stats']['defense'] }}</div>
             <div class="stat-physique">{{ joueur['stats']['physique'] }}</div>
-            <!-- Ajoutez d'autres statistiques selon vos besoins -->
         </div>
     </div>
     {% endfor %}
