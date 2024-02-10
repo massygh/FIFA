@@ -16,17 +16,11 @@
         <div class="carte-design">
             <img class="carte" src="{{ url_for('static', filename='images/TOTS_grande.png') }}" alt="Design de la carte">
             <img class="avatar" src="{{ url_for('static', filename='images/avatar_ronaldo.png') }}" alt="Avatar du joueur">
-        </div>
-
-        <!-- Informations du joueur -->
-        <h2>{{ joueur['nom'] }}</h2>
-        <p>Équipe: {{ joueur['equipe'] }}</p>
-
-        <!-- Statistiques du joueur -->
-        <div class="stats">
-            <p>Attaque: {{ joueur['stats']['attaque'] }}</p>
-            <p>Défense: {{ joueur['stats']['defense'] }}</p>
-            <p>Physique: {{ joueur['stats']['physique'] }}</p>
+            <!-- Statistiques du joueur -->
+            <div class="stat-attaque">{{ joueur['stats']['attaque'] }}</div>
+            <div class="stat-defense">{{ joueur['stats']['defense'] }}</div>
+            <div class="stat-physique">{{ joueur['stats']['physique'] }}</div>
+            <!-- Ajoutez d'autres statistiques selon vos besoins -->
         </div>
     </div>
     {% endfor %}
