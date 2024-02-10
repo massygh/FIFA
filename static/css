@@ -1,17 +1,18 @@
 /* static/css/styles.css */
 
 .carte-joueur {
-    position: relative; /* Position relative pour permettre le positionnement absolu de l'avatar */
+    position: relative;
 }
 
 .carte-design {
-    position: relative; /* Position relative pour que l'avatar soit positionné par rapport à cet élément */
-    display: inline-block; /* Permet à la carte de s'ajuster à la taille de l'image */
+    position: relative;
+    display: inline-block;
 }
 
 .avatar {
-    position: absolute; /* Position absolue pour superposer l'avatar sur la carte */
-    top: 0; /* Position en haut de la carte */
-    left: 0; /* Position à gauche de la carte */
-    z-index: 1; /* Met l'avatar au-dessus de la carte */
+    position: absolute;
+    bottom: 10px; /* Ajustez cette valeur selon vos préférences */
+    right: 10px; /* Ajustez cette valeur selon vos préférences */
+    width: 50px; /* Ajustez la taille de l'avatar selon vos préférences */
+    height: auto; /* Ajustez la hauteur de l'avatar en conséquence */
 }
