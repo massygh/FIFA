@@ -28,15 +28,15 @@
 
 .stat-attaque {
     top: 20px; /* Position verticale */
-    left: 30px; /* Position horizontale */
+    left: 10px; /* Position horizontale */
 }
 
 .stat-defense {
     top: 40px; /* Position verticale */
-    left: 30px; /* Position horizontale */
+    left: 10px; /* Position horizontale */
 }
 
 .stat-physique {
     top: 60px; /* Position verticale */
-    left: 30px; /* Position horizontale */
+    left: 10px; /* Position horizontale */
 }
