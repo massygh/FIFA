@@ -1,27 +1,17 @@
 /* static/css/styles.css */
 
 .carte-joueur {
-    width: 300px; /* Largeur de la carte */
-    height: 400px; /* Hauteur de la carte */
-    background-color: white; /* Couleur de fond de la carte */
-    border: 1px solid black; /* Bordure de la carte */
-    border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espacement intérieur de la carte */
-    text-align: center; /* Alignement du contenu au centre */
-    margin: 20px; /* Marge extérieure autour de la carte */
+    position: relative; /* Position relative pour permettre le positionnement absolu de l'avatar */
 }
 
 .carte-design {
-    width: 100%; /* Taille du design de la carte */
-    margin-bottom: 10px; /* Espacement entre le design et l'avatar */
+    position: relative; /* Position relative pour que l'avatar soit positionné par rapport à cet élément */
+    display: inline-block; /* Permet à la carte de s'ajuster à la taille de l'image */
 }
 
 .avatar {
-    width: 150px; /* Taille de l'avatar */
-    border-radius: 50%; /* Avatar arrondi */
-}
-
-.stats {
-    font-weight: bold; /* Texte en gras */
-    margin-top: 20px; /* Espacement entre les statistiques et le reste de la carte */
+    position: absolute; /* Position absolue pour superposer l'avatar sur la carte */
+    top: 0; /* Position en haut de la carte */
+    left: 0; /* Position à gauche de la carte */
+    z-index: 1; /* Met l'avatar au-dessus de la carte */
 }

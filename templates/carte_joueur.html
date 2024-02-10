@@ -12,11 +12,11 @@
 <body>
     {% for joueur in joueurs %}
     <div class="carte-joueur">
-        <!-- Design de la carte -->
-        <img class="carte-design" src="{{ url_for('static', filename='images/TOTS_grande.png') }}" alt="Design de la carte">
-
-        <!-- Avatar du joueur -->
-        <img class="avatar" src="{{ url_for('static', filename='images/avatar_ronaldo.png') }}" alt="Avatar du joueur">
+        <!-- Design de la carte avec avatar -->
+        <div class="carte-design">
+            <img class="avatar" src="{{ url_for('static', filename='images/avatar_ronaldo.png') }}" alt="Avatar du joueur">
+            <img class="carte" src="{{ url_for('static', filename='images/TOTS_grande.png') }}" alt="Design de la carte">
+        </div>
 
         <!-- Informations du joueur -->
         <h2>{{ joueur['nom'] }}</h2>
